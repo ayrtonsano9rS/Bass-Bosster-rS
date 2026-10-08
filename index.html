@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#03050a">
+<title>Bass Booster — rS_corp</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"></div><div class="shade"></div>
+<header><a class="logo" href="#"><b>BB</b><span>BASS <i>BOOSTER</i><small>rS_corp</small></span></a><div class="online"><em></em> PROCESSAMENTO NO NAVEGADOR</div></header>
+<main>
+<section class="hero"><div><label>◆ BASS ENHANCEMENT SYSTEM</label><h1>Mais <strong>peso</strong>.<br>Mais impacto.</h1><p>Potencialize os graves das suas músicas com os presets Bass Boost da <b>rS_corp</b>.</p><div class="tags"><span>V2</span><span>V3</span><span>MP3 320 KBPS</span></div></div><div class="equalizer"> <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></section>
+<section class="panel">
+<div class="heading"><div><label>01 / ÁUDIO</label><h2>Escolha sua música</h2></div><small>MP3 • WAV • OGG</small></div>
+<label class="drop" id="drop" for="file"><input id="file" type="file" accept="audio/*"><span class="upload">↑</span><b>Arraste sua música aqui</b><span>ou clique para procurar no computador</span><strong id="fileName">Nenhum arquivo selecionado</strong></label>
+<div id="originalBox" class="audioBox hidden"><div class="track"><b>♫</b><span><small>MÚSICA ORIGINAL</small><strong id="originalName">—</strong></span></div><audio id="original" controls></audio></div>
+<div class="heading presetHead"><div><label>02 / PRESET</label><h2>Escolha o Bass Boost</h2></div><small>EFEITO FIXO</small></div>
+<div class="presets"><button class="preset active" data-preset="v2"><b>V2</b><span><strong>Bass Boost V2</strong><small>Grave forte • equilíbrio geral</small></span><i>✓</i></button><button class="preset" data-preset="v3"><b>V3</b><span><strong>Bass Boost V3</strong><small>Mais grave • menos foco na voz</small></span><i>✓</i></button></div>
+<button id="process" class="process" disabled>⚡ PROCESSAR ÁUDIO</button>
+<div id="progress" class="hidden"><div><span id="progressText">Processando...</span><span id="percent">0%</span></div><div class="bar"><i id="bar"></i></div></div>
+<div id="result" class="result hidden"><div class="heading"><div><label>03 / RESULTADO</label><h2>Seu Bass Booster está pronto</h2></div><small class="ready">● PRONTO</small></div><audio id="output" controls></audio><a id="download" class="download">↓ BAIXAR ÁUDIO</a><p id="downloadName"></p></div>
+</section>
+<section class="features"><article><b>01</b><h3>Processamento local</h3><p>O áudio é processado no navegador nesta primeira versão.</p></article><article><b>02</b><h3>V2 / V3 fixos</h3><p>Sem controles de intensidade. O resultado mantém o preset escolhido.</p></article><article><b>03</b><h3>Nome automático</h3><p>O resultado usa o padrão <strong>_bassbooster_rS.mp3</strong>.</p></article></section>
+</main>
+<footer><b>Bass Booster</b><span>© rS_corp</span><small>BUILD 01 • AUDIO EXPERIENCE</small></footer>
+<script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js"></script><script src="script.js"></script>
+</body></html>
